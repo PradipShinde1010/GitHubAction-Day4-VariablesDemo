@@ -1,0 +1,9 @@
+name: Demo1-Workflow Env
+on: push
+env:
+    APP_NAME: Day51 of GHA
+jobs:
+    show-name:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "App Name is $APP_NAME"
