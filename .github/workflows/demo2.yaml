@@ -1,0 +1,11 @@
+name: Demo2
+on: push
+env:
+  ENV_NAME: global  #workflow-level variable
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      ENV_NAME: job  #job-level variable
+    steps:
+      - run: echo "Env=$ENV_NAME"
