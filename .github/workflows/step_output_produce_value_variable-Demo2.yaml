@@ -2,7 +2,7 @@ name: Step-Output_Demo
 on: push
 
 jobs:
-  test-demo-kastro:
+ step-output-job2:
     runs-on: ubuntu-latest
 
     steps:
