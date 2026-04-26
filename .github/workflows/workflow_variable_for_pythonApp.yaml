@@ -2,7 +2,7 @@ name: Demo2-Job Level Env
 on: push
 env:
   ENV_NAME: workflow-variable
-  
+
 jobs:
   run-app:
     runs-on: ubuntu-latest
@@ -18,5 +18,5 @@ jobs:
 
       - name: Run Container
         env:
-          ENV_NAME: step-level-variable
+          #ENV_NAME: step-level-variable
         run: docker run -e ENV_NAME=$ENV_NAME env-demo
