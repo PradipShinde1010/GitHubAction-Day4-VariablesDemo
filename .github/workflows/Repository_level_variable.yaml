@@ -1,0 +1,12 @@
+
+#For this demo, we should create repository level variable named ENV_NAME with value "repository-variable" in GitHub repository settings    .
+name: Repository Level Variable
+on: push
+jobs:
+  test-demo-kastro:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: use reository level variable
+          run: |
+            echo "Deployment Environment is: ${{vars.DEPLOY_ENV}}"
