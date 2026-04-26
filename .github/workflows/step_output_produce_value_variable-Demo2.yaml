@@ -1,4 +1,4 @@
-name: Step-Output_Demo
+name: Step-Output_Demo-2
 on: push
 
 jobs:

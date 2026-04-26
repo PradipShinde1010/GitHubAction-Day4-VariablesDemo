@@ -1,7 +1,7 @@
 
 # This step output demo shows how to produce a value in one step and consume it in another step using GitHub Actions.
 
-name: Step-Output_Demo
+name: Step-Output_Demo-1
 on: push
 jobs:
   step-output-job:
