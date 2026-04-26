@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: hello
-        run: echo "msg=Hello GHA" >> $GITHUB_OUTPUT
+        run: echo "msg=Hello GHA" >> $GITHUB_OUTPUT # This creates an output variable named "msg" with the value "Hello GHA". "$GITHUB_OUTPUT" is a special variable that GitHub Actions uses to store the output variables from steps. this variable named given by my own bcz it is used defined variable also it is available only within the step where it is created. To make it available to other steps, we need to use the "echo" command to write the output variable in a specific format to the "$GITHUB_OUTPUT" file. The format is "name=value", where "name" is the name of the output variable and "value" is the value you want to assign to it. In this case, we are creating an output variable named "msg" with the value "Hello GHA".
       - run: echo "${{steps.hello.outputs.msg}}"

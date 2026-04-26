@@ -1,0 +1,12 @@
+name: Step-Output_Demo
+on: push
+
+jobs:
+  test-demo-kastro:
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: generate
+        run: echo "version=1.1.1" >> $GITHUB_OUTPUT
+
+      - run: echo "Version=${{ steps.generate.outputs.version }}"
