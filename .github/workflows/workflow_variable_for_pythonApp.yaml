@@ -1,4 +1,4 @@
-name: Demo2-Job Level Env
+name: Workflow-Level Variable for Python App
 on: push
 env:
   ENV_NAME: workflow-variable

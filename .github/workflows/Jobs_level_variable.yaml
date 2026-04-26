@@ -1,4 +1,4 @@
-name: Demo2
+name: Jobs Level Variable
 on: push
 env:
   ENV_NAME: global  #workflow-level variable

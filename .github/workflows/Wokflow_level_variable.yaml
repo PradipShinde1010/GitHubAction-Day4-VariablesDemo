@@ -1,4 +1,4 @@
-name: Demo1-Workflow Env
+name: Workflow-Level Variable
 on: push
 env:
     APP_NAME: Day51 of GHA

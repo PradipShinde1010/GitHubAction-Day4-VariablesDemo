@@ -1,7 +1,7 @@
 
 # This workflow demonstrates the use of default GitHub variables in a GitHub Actions workflow.
 
-name: default github variables
+name: Default github variables Demo
 on: push
 jobs:
   info:
