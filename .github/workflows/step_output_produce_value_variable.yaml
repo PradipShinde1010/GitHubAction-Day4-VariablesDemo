@@ -1,0 +1,12 @@
+
+# This step output demo shows how to produce a value in one step and consume it in another step using GitHub Actions.
+
+name: Step-Output_Demo
+on: push
+jobs:
+  step-output-job:
+    runs-on: ubuntu-latest
+    steps:
+      - id: hello
+        run: echo "msg=Hello GHA" >> $GITHUB_OUTPUT
+      - run: echo "${{steps.hello.outputs.msg}}"
