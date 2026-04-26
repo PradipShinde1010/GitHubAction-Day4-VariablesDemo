@@ -10,3 +10,4 @@ jobs:
         - name: use reository level variable
           run: |
             echo "Deployment Environment is: ${{vars.DEPLOY_ENV}}"
+            echo "AWS Region is: ${{vars.AWS_REGION}}"
