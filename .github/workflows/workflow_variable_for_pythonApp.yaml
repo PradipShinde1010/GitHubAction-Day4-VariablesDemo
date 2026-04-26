@@ -17,6 +17,6 @@ jobs:
         run: docker build -t env-demo .
 
       - name: Run Container
-        env:
+        #env:
           #ENV_NAME: step-level-variable
         run: docker run -e ENV_NAME=$ENV_NAME env-demo
