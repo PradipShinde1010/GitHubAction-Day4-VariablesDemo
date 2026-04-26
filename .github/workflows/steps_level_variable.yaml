@@ -1,0 +1,9 @@
+name: Demo3-Step
+on: push
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "LEVEL=$LEVEL"
+        env:
+          LEVEL: step-level-variable #step-level variable
