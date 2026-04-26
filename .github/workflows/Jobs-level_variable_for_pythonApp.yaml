@@ -1,12 +1,12 @@
 name: Demo2-Job Level Env
 on: push
-env:
-  ENV_NAME: workflow-variable
 
 jobs:
   run-app:
     runs-on: ubuntu-latest
-   
+    env:
+      ENV_NAME: job-level-variable
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4

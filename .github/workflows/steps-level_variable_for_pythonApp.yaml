@@ -6,7 +6,9 @@ env:
 jobs:
   run-app:
     runs-on: ubuntu-latest
-   
+    env:
+      ENV_NAME: job-level-variable
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -15,4 +17,6 @@ jobs:
         run: docker build -t env-demo .
 
       - name: Run Container
+        env:
+          ENV_NAME: step-level-variable  #<--- This takes precedence over job-level variable
         run: docker run -e ENV_NAME=$ENV_NAME env-demo
